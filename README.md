@@ -31,20 +31,6 @@ El proyecto está orientado a poner en práctica buenas bases de **arquitectura,
 
 ---
 
-### 📂 Estructura del proyecto (resumen)
-
-```bash
-src/
-├── components/    # Componentes reutilizables (arquitectura atómica)
-├── screens/       # Pantallas de la app
-├── navigation/    # Configuración de navegación
-├── store/         # Redux (slices, store)
-├── services/      # Lógica de consumo de API
-└── utils/         # Utilidades y helpers
-```
-
----
-
 ## 📱 Capturas de pantalla
 
 <img src="README_Pictures/Screenshot_1770256103.png" width="30%">
