@@ -1,80 +1,110 @@
-# Catbreeds.
+# CatBreeds 🐱
 
-Es una aplicación móvil simple donde podemos encontrar información de diferente razas de gatos, realizada en react- native donde ponemos en practico las principales características que podemos tener en de una aplicación móvil
+**React Native Mobile App**
 
-Algunas características técnicas de la app:
+CatBreeds es una aplicación móvil desarrollada en **React Native** que permite explorar información sobre distintas razas de gatos.  
+El proyecto está orientado a poner en práctica buenas bases de **arquitectura, consumo de APIs y manejo de estado**, siguiendo patrones comunes en aplicaciones reales de producción.
 
-- Una navegación sencilla haciendo uso de react-navigation.
-- Realizado en una arquitectura Atómica.
-- Consumo de los endpoint con Axidos de una api publica de gatos ( https://thecatapi.com/ )
-- Gestor de estado para tener la información de la api almacenada reduxjs
-- Tiene icono y drawer
+---
 
-Algunos pantallazos de la aplicación:
+## 🚀 ¿Qué demuestra este proyecto?
+
+- Uso de arquitectura escalable y mantenible.
+- Integración con una API pública real.
+- Manejo de estado global.
+- Navegación móvil moderna.
+- Buenas prácticas en proyectos React Native.
+
+---
+
+## 🧠 Características técnicas
+
+- **React Native** como framework principal.
+- **Arquitectura Atómica** para una mejor organización y reutilización de componentes.
+- **React Navigation** para la navegación entre pantallas.
+- **Redux Toolkit** para el manejo de estado global.
+- **Axios** para el consumo de servicios REST.
+- Integración con la API pública:  
+  https://thecatapi.com/
+- **Drawer Navigation**.
+- Ícono personalizado de la aplicación.
+
+---
+
+### 📂 Estructura del proyecto (resumen)
+
+```bash
+src/
+├── components/    # Componentes reutilizables (arquitectura atómica)
+├── screens/       # Pantallas de la app
+├── navigation/    # Configuración de navegación
+├── store/         # Redux (slices, store)
+├── services/      # Lógica de consumo de API
+└── utils/         # Utilidades y helpers
+```
+
+---
+
+## 📱 Capturas de pantalla
 
 <img src="README_Pictures/Screenshot_1770256103.png" width="30%">
 <img src="README_Pictures/Screenshot_1770252976.png" width="30%">
 <img src="README_Pictures/Screenshot_1770252971.png" width="30%">
 
-Instalacion :
+---
 
-Nota: Tener previamente configurado un entorno de react-native funcional _(https://reactnative.dev/docs/set-up-your-environment)_
+## 🛠️ Instalación y ejecución
 
-Paso 1: Instalar las depencias
+### Requisitos previos
 
-```markdown
-# Using npm
+Tener configurado correctamente el entorno de React Native:  
+https://reactnative.dev/docs/set-up-your-environment
 
-npm start
+---
 
-# OR using Yarn
+### 1️⃣ Instalar dependencias
 
-yarn start
+```bash
+# npm
+npm install
+
+# yarn
+yarn install
 ```
 
-Paso 2: Ejecutar la app
+---
 
-Abra una nueva ventana/panel de terminal desde la raíz de su proyecto React Native y use uno de los siguientes comandos para compilar y ejecutar su aplicación Android o iOS:
+### 2️⃣ Ejecutar la aplicación
 
-Android
+### Android
 
-# Usando npm
-
+```bash
+# npm
 npm run android
 
-# O usando Yarn
-
+# yarn
 yarn android
+```
 
-iOs
+### iOS
 
-Para iOS, recuerda instalar las dependencias de CocoaPods (esto solo debe ejecutarse en el primer clon o después de actualizar las dependencias nativas).
-
-La primera vez que crees un proyecto, ejecuta el empaquetador de Ruby para instalar CocoaPods:
+Instalar dependencias nativas (solo la primera vez o tras cambios):
 
 ```bash
+
 bundle install
-
-```
-
-Luego, y cada vez que actualices tus dependencias nativas, ejecuta:
-
-```bash
 bundle exec pod install
-
 ```
 
-Para más información, visita la [Guía de inicio de CocoaPods](https://guides.cocoapods.org/using/getting-started.html).
+Ejecutar la app:
 
 ```bash
-# Usando npm
+# npm
 npm run ios
 
-# O usando Yarn
+# yarn
 yarn ios
-
 ```
 
-Si todo está configurado correctamente, deberías ver tu nueva aplicación ejecutándose en el emulador de Android, el simulador de iOS o en tu dispositivo conectado.
-
-Esta es una forma de ejecutar tu aplicación; también puedes compilarla directamente desde Android Studio o Xcode.
+Si el entorno está correctamente configurado, la aplicación se ejecutará en el emulador, simulador o dispositivo físico conectado.
+También es posible compilarla directamente desde Android Studio o Xcode.
