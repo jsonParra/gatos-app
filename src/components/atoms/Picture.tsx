@@ -1,6 +1,7 @@
 import React, {ReactNode} from 'react';
 import {StyleSheet, ImageProps, ImageBackground} from 'react-native';
 import {calculateRelativeSize} from '../../utils/calculateRelativeSize';
+import {useRedux} from '../../hooks';
 
 interface Picture {
   src?: string;
@@ -9,10 +10,11 @@ interface Picture {
 }
 
 export const Picture = ({src, props, children}: Picture) => {
+  const {orientation} = useRedux();
   return (
     <ImageBackground
       resizeMethod="scale"
-      resizeMode="cover"
+      resizeMode={orientation === 'landscape' ? 'stretch' : 'cover'}
       {...props}
       style={[stylesPicture.container, stylesPicture.border, props?.style]}
       imageStyle={[stylesPicture.border, props?.style]}
