@@ -1,12 +1,12 @@
 import axios from 'axios';
-
-const apiKey =
-  'live_99Qe4Ppj34NdplyLW67xCV7Ds0oSLKGgcWWYnSzMJY9C0QOu0HUR4azYxWkyW2nr';
+import Config from 'react-native-config';
+const Key = Config.API_KEY;
+const url = Config.API_URL;
 
 const defaultOptions = {
-  baseURL: 'http://api.thecatapi.com/v1/',
+  baseURL: url,
   params: {
-    api_key: apiKey,
+    api_key: Key,
     limit: 20,
   },
 };
